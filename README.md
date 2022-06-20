@@ -1,0 +1,1 @@
+# Link to deploy - [Digital clock](https://grutax.github.io/js-practice/Digital_Clock/)
