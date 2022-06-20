@@ -8,5 +8,5 @@ window.onload = function() {
 
         const clock = `${hours}:${minutes}:${seconds}`;
         document.querySelector('.clock').innerHTML = clock;
-    }, 1000);
+    }, 500);
 }
