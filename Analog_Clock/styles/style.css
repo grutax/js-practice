@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #cccccc;
+}
+
+.clock {
+  width: 450px;
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../img/clockface.png") center/cover;
+  border-radius: 50%;
+  border: 4px solid black;
+  position: relative;
+}
+
+.clock::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: black;
+  z-index: 100;
+}
+
+.clock .hour {
+  position: absolute;
+}
+
+.clock .hour .hours {
+  height: 190px;
+  width: 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  border-radius: 50%;
+}
+
+.clock .hour .hours::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 100px;
+  background: red;
+  z-index: 10;
+  border-radius: 6px 6px 0 0;
+}
+
+.clock .minute {
+  position: absolute;
+}
+
+.clock .minute .minutes {
+  height: 240px;
+  width: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  border-radius: 50%;
+}
+
+.clock .minute .minutes::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 150px;
+  background: black;
+  z-index: 11;
+  border-radius: 6px 6px 0 0;
+}
+
+.clock .second {
+  position: absolute;
+}
+
+.clock .second .seconds {
+  height: 280px;
+  width: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  border-radius: 50%;
+}
+
+.clock .second .seconds::before {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 180px;
+  background: white;
+  z-index: 12;
+  border-radius: 6px 6px 0 0;
+}
+/*# sourceMappingURL=style.css.map */

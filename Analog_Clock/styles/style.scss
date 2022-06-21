@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(204, 204, 204);
+}
+
+.clock {
+    width: 450px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/clockface.png') center / cover;
+    border-radius: 50%;
+    border: 4px solid black;
+    // box-shadow: 0 15px 15px rgba(255, 255, 255, 0.05),
+    //     inset 0 15px 15px rgba(255, 255, 255, 0.05),
+    //     0 15px 15px rgba(0, 0, 0, 0.3),
+    //     inset 0 15px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: black;
+        z-index: 100;
+    }
+
+    .hour {
+        position: absolute;
+
+        .hours {
+            height: 190px;
+            width: 190px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            border-radius: 50%;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 8px;
+                height: 100px;
+                background: red;
+                z-index: 10;
+                border-radius: 6px 6px 0 0;
+            }
+        }
+    }
+
+    .minute {
+        position: absolute;
+
+        .minutes {
+            height: 240px;
+            width: 240px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            border-radius: 50%;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 4px;
+                height: 150px;
+                background: black;
+                z-index: 11;
+                border-radius: 6px 6px 0 0;
+            }
+        }
+    }
+
+    .second {
+        position: absolute;
+
+        .seconds {
+            height: 280px;
+            width: 280px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            border-radius: 50%;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 3px;
+                height: 180px;
+                background: white;
+                z-index: 12;
+                border-radius: 6px 6px 0 0;
+            }
+        }
+    }
+}
