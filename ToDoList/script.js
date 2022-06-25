@@ -97,8 +97,15 @@ const changeList = (event) => {
 
 // ------------------------------------------------------- //
 
+const pressEnter = (event) => {
+    if (event.keyCode === 13) addItemToList();
+}
+
+// ------------------------------------------------------- //
+
 addItemButton.addEventListener('click', addItemToList);
 clearAllButton.addEventListener('click', clearAllItems);
 items.addEventListener('click', (event) => changeList(event));
+input.addEventListener('keydown', (event) => pressEnter(event));
 
 displayToDos();
