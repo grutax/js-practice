@@ -4,3 +4,4 @@
 - [Digital Clock](https://grutax.github.io/js-practice/Digital_Clock/)
 - [Analog Clock](https://grutax.github.io/js-practice/Analog_Clock/)
 - [Vertical Slider](https://grutax.github.io/js-practice/Vertical_Slider/)
+- [To Do List](https://grutax.github.io/js-practice/ToDoList/)
